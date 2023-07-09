@@ -1,0 +1,395 @@
+.Segue resoluções da lista de fixação, espero ajudá-los com as resoluções. Outros matérias serão enviados posteriormente.
+
+
+Proposta da atividade: Resolva as questões a seguir utilizando o laço while. Calcule os fatoriais a seguir:
+
+
+
+Uma loja tem 15 Clientes cadastrados e deseja enviar uma 
+correspondência a cada um deles, anunciando um bônus especial. Faça um 
+programa que leia o nome do cliente e o valor de suas compras no ano 
+passado. Calcule e mostre um bônus de 10% se o valor das compras for 
+menor que R$ 1000,00 e de 15%, caso contrário.
+
+
+
+<html>
+
+<head>
+
+<title>rep</title>
+
+<script>
+
+x=0v
+
+while(x<1){
+
+x++
+
+var name= prompt("digite O seu nome");
+
+var valor=prompt(" digite o valor das compras do ano passado");
+
+if(valor<1000){
+
+calc1=valor*10;
+
+calc2=calc1/100;
+
+document.write(name+" seu bônus foi de:"+ calc2+"<br>");
+
+}else{
+
+calc3=valor*15;
+
+calc4=calc3/100;
+
+document.write(name+" seu bônus foi de:"+ calc4+"<br>");
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
+
+
+
+
+Crie uma calculadora de potenciação em que o programa recebe do usuário 
+
+a base (b) e o expoente (n), e calcule b n
+
+//
+
+x=0;
+
+while(y<3){
+
+y++ 
+
+b=prompt(“digite a base”);
+
+n=prompt(“digite o expoente”);
+
+Cal=b**n;
+
+ document.write(Cal);
+
+}
+
+4. Um pesquisador entrevistou 20 pessoas em um cinema. Cada entrevistado 
+
+respondeu a um questionário no qual constava sua opinião em relação ao 
+
+filme: Ótimo - 3, Bom - 2, Regular - 1 e sua idade . Faça um programa 
+
+que receba a opinião de vários espectadores e que calcule e mostre:
+
+a quantidade de pessoas que respondeu Ótimo; a quantidade de pessoas que 
+
+respondeu Bom; a quantidade de pessoas que respondeu Regular; a média das 
+
+idades das pessoas que responderam Ótimo; a percentagem de pessoas que 
+
+respondeu Bom entre todos os espectadores analisados.
+
+//
+
+<html>
+
+<body>
+
+<script>
+
+x=0;
+
+while(x<3){
+
+x++
+
+op=prompt("digite sua opinião, otimo =3, bom=2, regular=1");
+
+id=prompt(" digite sua idade ");
+
+</script>
+
+</body>
+
+</html>
+
+//questao4
+
+x=0;
+
+cont1=0;cont2=0;cont3=0;
+
+while(x<5){
+
+x++
+
+op=prompt("digite sua opniao 1 regular, 2 bom , 3 otimo");
+
+id=prompt("digite idade");
+
+if(op==1){
+
+ cont1++
+
+ document.write("pessoas que acharam regular :"+cont1);
+
+}if(op==2){
+
+ cont2++
+
+ document.write("pessoas que acharam bom :"+cont2);
+
+ var media= (media+id)/cont2;
+
+ document.write("media de pessoaas que acharam boom :"+cont2);
+
+var porcen=(media/100)*cont2;
+
+document.write("% de pessoaas que acharam bom :"+porcen);
+
+}if(op==3){
+
+ cont3++
+
+ document.write("pessoas que acharam otimo :"+cont3);
+
+ var media= (media+id)/cont3;
+
+document.write("media de pessoaas que acharam otimo :"+cont3);
+
+ 
+
+} }
+
+
+
+
+
+
+Faça um algoritmo que calcule a média de salários de uma empresa, pedindo ao usuário a 
+
+quantidade de funcionários, o nome e o salário de cada funcionário e devolvendo a média, o salário 
+
+mais alto e o salário mais baixo.
+
+// questao 6
+
+var media=0;
+
+var resultado=0; 
+
+var vetor=[];
+
+var quant=prompt(parseInt("digite a quantidade de funcionarios"));
+
+a=0;
+
+
+while(a<quant){
+
+ a++
+
+var name=prompt("digite o nome");
+
+var salar=parseInt(prompt("digite o salário"));
+
+vetor.push(salar);
+
+for(var i = 0; i < vetor.length; i++) {
+
+resultado=resultado+vetor[i];
+
+}
+
+console.log('soma :'+resultado); // soma dos salarios
+
+media=resultado/ quant;
+
+console.log('media salarial :'+media);
+
+}
+
+7. Para uma turma de 45 alunos, construa um algoritmo que determine: a) A 
+
+idade média dos alunos com menos de 1,70m de altura; b) A altura média dos 
+
+alunos com mais de 20 anos.
+
+// questao 7
+
+soma=0; soma1=0;calc2=0; calcid=0;cont2=0;
+
+a=0;
+
+cont=0
+
+while(a<45){
+
+ a++
+
+var aluno=prompt("digite o nome do aluno");
+
+var altura=parseFloat(prompt("digite a altura"));
+
+var idade=parseInt(prompt("digite a idade"));
+
+if( altura< 1.70 ){
+
+ cont++
+
+ soma=soma+idade;
+
+ calcid=soma/cont;
+
+}else{} 
+
+if(idade>=20){
+cont2++
+soma1=soma1+altura;
+calc2=soma1/cont2;
+}
+} 
+console.log('media de idade de alunos com menos de 1.70 : '+calcid);
+console.log('media de altura de alunos maiores de 20 anos : '+calc2);
+8. Uma loja tem vários Clientes cadastrados e deseja enviar uma 
+correspondência a cada um deles, anunciando um bônus especial. Faça um 
+programa que leia o nome do cliente e o valor de suas compras no ano passado. 
+Calcule e mostre um bônus de 10% se o valor das compras for menor que R$ 
+1000,00 e de 15%, caso contrário. O algoritmo deve parar quando for inserido 
+um nome vazio.
+// questao 8
+aluno=0; a=0;
+var aluno=prompt("digite o nome do aluno");
+while(aluno!=""){ 
+ a++
+calc=salario*(10/100); 
+calc2=calc+ salario;
+ console.log(" bônus de 10% no salario :"+calc2); 
+}else{ 
+ calc=salario*(15/100); 
+calc2=calc+ salario;
+ console.log(" bônus de 10% no salario :"+calc2); 
+
+
+
+
+
+
+}
+
+var aluno=prompt("digite o nome do aluno");
+
+}
+
+9. Faça um programa que receba a idade de várias pessoas e que para cada uma, 
+
+calcule e mostre: - a quantidade de pessoas em cada faixa etária; O programa 
+
+deve terminar quando for digitada uma idade menor que 0. Use a tabela a seguir 
+
+para se guiar sobre as faixas etárias:
+
+// questao 9
+
+idade=0; a=0;cont=0; cont2=0; cont3=0; cont4=0; cont5=0;
+
+var idade=prompt("digite a idade");
+
+while(idade<0){ 
+
+ a++
+
+ var idade=prompt("digite a idade");
+
+if(idade>0 <5){
+
+cont++
+
+document.write("idade de menor de 5 anos : "+cont );
+
+}else{}
+
+if(idade>6 <13){
+
+cont2++
+
+document.write("idade de maior de 6 e menor de 13 anos : "+cont2 );
+
+}else{}
+
+if(idade>14 <17){
+
+cont3++
+
+
+
+}else{}
+if(idade>18 <59){
+cont4++
+document.write("idade de maior de 18 e menor de 59 anos : "+cont4 );
+}else{}
+if(idade>60){
+cont5++
+document.write("idade de maior de 60 anos : "+cont5 );
+}else{}
+}
+10. Um pesquisador entrevistou algumas pessoas em um cinema. Cada entrevistado 
+respondeu a um questionário no qual constava sua opinião em relação ao filme: 
+Ótimo - 3, Bom - 2, Regular - 1 e sua idade . Faça um programa que receba a 
+opinião de vários espectadores e que calcule e mostre. Utilize do...while:
+//questao 10
+do{
+x=cont2;
+cont1=0;cont2=0;cont3=0;
+while(x<10){
+x++
+op=prompt("digite sua opniao 1 regular, 2 bom , 3 otimo");
+id=prompt("digite idade");
+
+
+document.write("idade de maior de 14 e menor de 17 anos : "+cont3 );
+
+if(op==1){
+
+ cont1++
+
+ document.write("pessoas que acharam regular :"+cont1);
+
+}if(op==2){
+
+ cont2++
+
+ document.write("pessoas que acharam bom :"+cont2);
+
+ var media= (media+id)/cont2;
+
+ document.write("media de pessoaas que acharam boom :"+cont2);
+
+}if(op==3){
+
+ cont3++
+
+ document.write("pessoas que acharam otimo :"+cont3);
+
+ var media= (media+id)/cont3;
+
+document.write("media de pessoaas que acharam otimo :"+cont3);
+
+var porcen=(media/100)*cont3;
+
+document.write("% de pessoaas que acharam otimo :"+porcen);
+
+}
+
+}
+
+}
