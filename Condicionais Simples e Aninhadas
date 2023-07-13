@@ -1,0 +1,132 @@
+
+Lista Avaliativa 2 - Condicionais Simples e Aninhadas
+1. Você foi contratado para criar um algoritmo para a academia Ferro e 
+Ferrugem. O programa deve calcular o Índice de Massa Corporal do aluno. 
+Para isso é necessário receber a altura e o peso do usuário e calcular 
+o IMC pela fórmula:
+// questao 1
+var altura=parseInt(prompt("digite a altura"));
+var peso=parseInt(prompt("digite o peso"));
+var IMC= peso/(altura**2);
+if(IMC> 25){
+console.log("“Você está acimado peso”");
+}
+2. Melhore o algoritmo da questão 1, incluindo uma frase para o caso de o usuário não estar 
+acima do peso. Nesta caso, se o IMC for menor ou igual a 25, então, imprima “Você está com 
+o peso ideal”.
+// questao 2
+var altura=parseInt(prompt("digite a altura"));
+var peso=parseInt(prompt("digite o peso"));
+var IMC= peso/(altura**2);
+if(IMC> 50){
+console.log("“Você está acimado peso”");
+}else{
+ console.log("“Você está com o peso ideal”");
+}
+
+
+3. Receba um valor do usuário e caso este valor seja divisível por 2, imprima, “Número par”. 
+Obs: um número é par quando o resto da divisão deste por 2 é igual a 0. Utilize o operador 
+módulo %.
+// questao 3
+var n = prompt("digite numero");
+var resto = n % 2;
+if (resto == 0) {
+ console.log(n + " par");
+} else {
+ console.log(n + " impar");
+}
+4. Crie um programa que receba o código do combustível comprado e imprima, 
+“Combustível escolhido: Álcool - R$ 3,16” ou “Combustível escolhido: 
+Gasolina - R$ 4,19”.
+// questao 4
+var cod=prompt(" digite 1 para álcool e 2 para gasolina");
+if(cod==1){console.log("Combustívelescolhido:Álcool-R$3,16");
+}if(cod==2){console.log("Combustívelescolhido:Gasolina - R$ 4,19");}
+5. Melhore o programa anterior, recebendo além do código do produto a quantidade em litros 
+de combustível comprado. No final, imprima o valor a ser pago pelo cliente.
+// questao 5
+var cod=prompt(" digite 1 para álcool e 2 para gasolina");
+var quant=parseFloat(prompt("digite quantidade litros"));
+if(cod==1){
+ console.log("Combustívelescolhido:Álcool-R$3,16");
+ calc=quant*3.16;
+ console.log("compra no valor :"+calc);
+
+}if(cod==2){
+ calc=quant*4.19;
+ console.log("Combustívelescolhido:Gasolina - R$ 4,19");
+ console.log("compra no valor :"+calc);}
+6. Crie um sistema de entrada para a boate Drinks & Tombos, que receba o ano de nascimento 
+do usuário e imprima “Pode entrar”, caso seja de maior ou “Entrada proibida”, caso seja 
+menor de idade.
+// questao 6
+var ano=prompt(" digite ano de nascimento");
+if(ano>=2004){
+ console.log("Pode Entrar");
+} else{
+ console.log("Entrada Proibida");
+}
+7. Uma frutaria vende morangos com preços diferentes de acordo com 
+quantidade comprada. Se forem compradas até 5kg, o preço é de R$ 2,50 
+por kg. Caso sejam comprados mais de 5kg, o preço é sai a R$ 2,20. Crie 
+um algoritmo que receba o peso comprado e calcule o valor total que 
+deverá ser pago pelo cliente.
+// questao 7
+var quant=parseFloat(prompt("digite quantos kg de morango deseja")); 
+if(quant<5){ 
+ calc=quant*2.50; 
+ console.log("compra no valor :"+calc); 
+}if(quant>5){ 
+ calc=quant*2.20; 
+ console.log("compra no valor :"+calc);
+} 
+
+8. Um posto de vacinação só pode dar uma certa vacina se o indivíduo for criança e tiver até 5 
+
+anos. Crie um algoritmo que receba a letra ‘C’ se for criança e ‘A’ se for adulto, e também 
+
+receba a idade. Caso esteja dentro da regra, o programa deve imprimir “Pode receber a 
+
+vacina”, caso contrário, deve imprimir “Não pode receber a vacina”.
+
+// questao 8
+
+var id=prompt("digite A para adulto e C para adulto"); 
+
+var idade=prompt("digite idade");
+
+if(id=="C" && idade <=5){ 
+
+ console.log("Pode vacinar"); 
+
+}else{console.log("Não Pode vacinar"); }
+
+9. Escreva um algoritmo que receba o preço unitário e a quantidade de mercadoria adquirida. 
+
+Calcule o total da compra e caso seja maior que 100, calcule 5% de desconto. Imprima o valor após o 
+
+desconto.
+
+// questao 9 
+
+var preco=parseFloat(prompt("digite o preço do produto ")); 
+
+var quant=parseFloat(prompt("digite quantidade do produto")); 
+
+calc=quant*preco; 
+
+console.log("compra no valor : "+calc); 
+
+if(calc>100 || quant >100){ 
+
+ calc=quant*preco; 
+
+ desconto=calc*(5/100);
+
+ total= calc-desconto;
+
+ console.log("compra com desconto no valor :"+total);
+
+}
+
